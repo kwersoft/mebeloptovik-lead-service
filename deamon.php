@@ -62,7 +62,7 @@ try {
 	exit;
 }
 echo $message;
-//TODO Удаление обработанной строки
+// Удаление обработанной строки
 $requests = [
 	new Google_Service_Sheets_Request([
 		'deleteRange' => [
