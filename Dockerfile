@@ -22,6 +22,7 @@ RUN set -eux ; docker-php-ext-enable amqp
 COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
 COPY cron /etc/cron.d/sample
 COPY composer.json /app/composer.json
+COPY deamon.php /app/deamon.php
 
 WORKDIR /app
 
